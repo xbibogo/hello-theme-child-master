@@ -1,0 +1,76 @@
+/* 
+Theme Name: Hello Elementor Child
+Theme URI: https://github.com/elementor/hello-theme-child/
+Description: Hello Elementor Child is a child theme of Hello Elementor, created by Elementor team
+Author: Elementor Team
+Author URI: https://elementor.com/
+Template: hello-elementor
+Version: 2.0.0
+Text Domain: hello-elementor-child
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+
+/* Add your custom styles here */
+.page-header {
+    display: none;
+}
+
+a {
+    color: #1a4d2e; /* deep forest green */
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #4caf50; /* lighter green highlight */
+    outline: 2px solid #4caf50; /* accessible focus outline */
+}
+
+/* Selected/current navigation link state */
+.current-menu-item > a,
+.current_page_item > a,
+.current-menu-ancestor > a,
+a[aria-current="page"],
+.elementor-nav-menu .elementor-item.elementor-item-active {
+    color: #4caf50;
+}
+
+.full-width-section {
+    width: 100%;
+    max-width: 100%;
+    padding: 60px 20px;
+    background: url('assets/images/forest-bg.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+    color: #0f2c1d;
+}
+
+/* Buttons */
+button, .elementor-button {
+    background-color: #1a4d2e;
+    color: #fff;
+    border-radius: 8px;
+    padding: 12px 24px;
+}
+
+button:hover, .elementor-button:hover {
+    background-color: #4caf50;
+}
+
+/* Accessibility: high contrast for readability */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
